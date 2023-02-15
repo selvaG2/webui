@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            background: #CC95C0;
+            /* fallback for old browsers */
+
+            background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        fieldset {
+            background: #B993D6;
+
+            background: linear-gradient(to right, #8CA6DB, #B993D6);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- field set goes here -->
+    <fieldset>
+
+        <legend>
+            Student Registration
+        </legend>
+
+        <label>Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+        <label>User name</label>
+        <input type="text" name="user_name" id="uname" placeholder="Enter your User name" required><br><br>
+        <label>Password</label>
+        <input type="password" name="password" id="pass" placeholder="Enter your password" pattern="[a-z]{1}[A-Z]{1}[0-9]{1}[@,#,.,*,&]{1}.{8}" required><br><br>
+        <input type="checkbox" name="checkbox" id="check">Remember password?<br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" id="gen" value="Male">Male
+        <input type="radio" name="gender" id="gen" value="Female">Female<br><br>
+        <label>Address</label>
+        <textarea></textarea><br><br>
+        <label>Date-of-birth</label>
+        <input type="datetime-local"><br><br>
+        <label>Select your course</label>
+        <select name="course">
+            <optgroup label="Arts">
+                <option>BCA</option>
+                <option>BSC(IT)</option>
+                <option>BSC(CT)</option>
+                <option>BSC(CS)</option>
+            </optgroup>
+            <optgroup label="Engineering">
+                <option>EEE</option>
+                <option>CSE</option>
+                <option>MECH</option>
+                <option>ECE</option>
+            </optgroup>
+        </select>
+        <br><br><label>Mobile number</label>
+        <input type="number" name="number" id="num" placeholder="Enter your mobile number" pattern="[0-9]{10}"
+            required><br><br>
+        <label>Telephone number</label>
+        <input type="tel" name="Telephone" id="telnum" placeholder="enter the number in order">
+        <br><br><input type="button" id="btn" value="Submit">
+    </fieldset>
+</body>
+
+</html>
