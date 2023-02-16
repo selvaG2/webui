@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en">
+<!-- check -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        fieldset {
+            font-family: monospace;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+        }
+        body {
+            background-image: #ffdcba;
+
+        }
+        div{
+            padding: 30px;
+            margin: auto;
+        }
+        .login{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family: monospace;">Welcome for Registration</h1>
+    <form action="login.html" method="get" target="_blank" class="login">
+        <br>Already have account?
+        <button type="submit" class="loginbutton">login</button>
+    </form>
+    
+    <!-- Form goes here -->
+    <form action="Thankyou.html" method="get">
+        <!-- field set goes here -->
+        <div>
+            <fieldset>
+
+                <legend>
+                    Student Registration
+                </legend>
+
+                <label>Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required/><br><br>
+                <label>User name</label>
+                <input type="text" name="user_name" id="uname" placeholder="Enter your User name" required/><br><br>
+                <label>Password</label>
+                <input type="password" name="password" id="pass" placeholder="Enter your password" pattern="[a-z A-Z 0-9 @ # . * &]{8,12}" required><br><br>
+                <input type="checkbox" name="checkbox" id="check">Remember password?<br><br>
+                <label>Gender</label>
+                <input type="radio" name="gender" id="gen" value="Male">Male
+                <input type="radio" name="gender" id="gen" value="Female">Female<br><br>
+                <label>Address</label>
+                <textarea></textarea><br><br>
+                <label>Date-of-birth</label>
+                <input type="datetime-local"><br><br>
+                <label>Select your course</label>
+                <select name="course">
+                    <optgroup label="Arts">
+                        <option value="" disabled selected hidden >--- Select your course ---</option>
+                        <option>BCA</option>
+                        <option>BSC(IT)</option>
+                        <option>BSC(CT)</option>
+                        <option>BSC(CS)</option>
+                    </optgroup>
+                    <optgroup label="Engineering">
+                        <option>EEE</option>
+                        <option>CSE</option>
+                        <option>MECH</option>
+                        <option>ECE</option>
+                    </optgroup>
+                </select>
+                <br><br><label>Mobile number</label>
+                <input type="number" name="number" id="num" placeholder="Enter your mobile number" pattern="[0-9]{10}"
+                    required/><br><br>
+                <label>Telephone number</label>
+                <input type="tel" name="Telephone" id="telnum" placeholder="enter the number in order" required/>
+                <br><br><button type="submit">Submit</button>
+
+                
+        </div>
+        </fieldset>
+        
+    </form>
+</body>
+
+</html>
