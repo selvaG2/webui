@@ -36,9 +36,8 @@
     </style>
     <script>
         function validateForm(){
-            let x=document.forms["myform"]["username"].value;
             let y=document.forms["myform"]["password"].value;
-            if (x && y != ("selva") ("selva@12") )
+            if (y != "selva@12" )
                 alert("Username or password doesnot match");
                 return false;
 
@@ -51,7 +50,7 @@
 
         <h2 class="head1" id="head1" style="text-align: center;"><b>KS COURSES</b></h2>
 
-        <form name="loginform" action="Thankyou(Task2).html" onclick="return validateForm" method="get">
+        <form name="loginform" action="java.html"  method="get">
 
             <fieldset>
 
@@ -67,7 +66,7 @@
                 <input class="a" type="text" class="password" name="password" placeholder="Enter your user name" required /><br>
                 <br><br><a href="" style="margin-left: 50px;">Forget password ?</a>
                 
-                <br><br><button class="b" type="login">Login</button>
+                <br><br><button class="b" type="login" onclick="validateForm()">Login</button>
             </div>
             </fieldset>
         </form>
