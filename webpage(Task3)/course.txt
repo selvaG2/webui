@@ -1,0 +1,42 @@
+<!-- Courses content goes here -->
+    <h3 class="h3"style="display:block; padding-top:50px;"><b><mark style="background-color: #ffdcba;"  >COURSES</mark></b></h3>
+    <br>
+    <div class="div4" id="course" style="float: left;">
+
+        <form action="java.html" target="_blank" class="javaform">
+            <h3 style="text-align: center;">JAVA</h3>
+            <P style="width: 40%; text-align: center; margin-left: 80px;">Learn Java<br>
+                Java is a popular programming language.<br>
+
+                Java is used to develop mobile apps, web apps, desktop apps, games and much more.<br>
+
+            </P>
+            <br><button type="submit" class="javabutton">Start learning</button>
+
+        </form>
+    </div>
+    <div class="div5" id="course" style="float: right;">
+        <form action="cpp.html" target="_blank" class="cppform">
+            <h3 style="text-align: center;">C++</h3>
+            <P style="width: 40%; text-align: center; margin-left: 80px;">Learn C++<br>
+                C++ is a popular programming language.<br>
+
+                C++ is used to create computer programs, and is one of the most used language in game development.<br>
+            </P>
+            <br><button type="submit" class="cppbutton">Start learning</button>
+
+        </form>
+    </div>
+    <div class="div6" id="course" style="display: block; margin-left: auto;margin-right: auto;">
+        <form action="c.html" target="_blank" class="cform">
+            <h3 style="text-align: center;">C</h3>
+            <P style="width: 40%; text-align: center; margin-left: 80px;">Learn C<br>
+                C is a general-purpose programming language, developed in 1972, and still quite popular.<br>
+
+                C is very powerful; it has been used to develop operating systems, databases, applications, etc.<br></P>
+            <br><button type="submit" class="cbutton">Start learning</button>
+
+        </form>
+
+    </div>
+    <!-- Courses content ends here -->

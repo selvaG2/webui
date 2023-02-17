@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="css" href="/webpage(Task3)/CSS/login.css" >
+    <style>
+        fieldset{
+            padding: 100px;
+            width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .b{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img1{
+            margin-bottom: 5px;
+            float: right;
+            width:50%;
+        }
+        .loginc{
+            margin-top: 125px;
+        } 
+        a{
+            text-decoration: none;
+            color: darkslateblue;
+        }  
+            
+        
+    </style>
+    <script>
+        function validateForm(){
+            let x=document.forms["myform"]["username"].value;
+            let y=document.forms["myform"]["password"].value;
+            if (x && y != ("selva") ("selva@12") )
+                alert("Username or password doesnot match");
+                return false;
+
+        }
+    </script>
 </head>
+
 <body>
     <div class="container" id="container">
 
-        <h2 class="head1" id="head1"><b>KS COURSES</b></h2>
+        <h2 class="head1" id="head1" style="text-align: center;"><b>KS COURSES</b></h2>
+
+        <form name="loginform" action="Thankyou(Task2).html" onclick="return validateForm" method="get">
+
+            <fieldset>
+
+                <legend style="text-align: center;">
+                    Login
+                </legend>
+                
+                <img  class="img1"  src="/assets/hero.png" alt="error">
+                <div class="loginc">
+                <label class="a"><b>USER NAME: </b></label>
+                <input class="a"  type="text" class="username" name="username" placeholder="Enter your user name" required /><br>
+                <br><label class="a"><b>PASSWORD :</b></label>
+                <input class="a" type="text" class="password" name="password" placeholder="Enter your user name" required /><br>
+                <br><br><a href="" style="margin-left: 50px;">Forget password ?</a>
+                
+                <br><br><button class="b" type="login">Login</button>
+            </div>
+            </fieldset>
+        </form>
 
     </div>
 </body>
+
 </html>
