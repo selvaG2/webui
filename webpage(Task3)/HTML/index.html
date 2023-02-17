@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <style>
+         body{
+           padding-top: 50px;
+           
+        } 
 
         * {
             color: black;
@@ -25,6 +29,9 @@
             list-style: none;
             font-family: monospace;
             background-color: #ffdcba;
+            position: fixed;
+            top: 0;
+            width: 100%;
 
         }
 
@@ -180,10 +187,11 @@
 </head>
 
 <body>
+    
     <!-- Header goes here -->
     <header>
 
-        <img src="/assets/logo.png" alt="logo" style="width: 50px; float: left; margin-left: 20px;">
+        
 
         <nav class="navbar">
             <ul>
@@ -192,13 +200,14 @@
                 <li><b><a href="#contact">CONTACT US</a></b></li>
                 <li><b><a href="#course">COURSES AVAILABLE</a></b></li>
                 <li><b><a href="register(Task2).html">SIGN UP/LOGIN</a></b></li>
+                <img src="/assets/logo.png" alt="logo" style="width: 50px; float: left; margin-left: 20px;">
             </ul>
 
         </nav>
 
     </header>
     <!-- Header ends here -->
-
+    <div class="container-fluid well" id="home" style="display:block; padding-top:50px;">
     <h1><b>KS COURSES</b></h1>
     <!-- Div1 with introduction goes here -->
     <div class="div1" id="home">
@@ -225,12 +234,14 @@
     <!-- Div1 with introduction ends here -->
     <hr>
 
-    <div class="div2">
+    <div class="div2" id="para2" style="display:block; padding-top:50px;">
         <!-- Div2 with about us goes here -->
 
+        
         <h3><b><mark style="background-color: #ffdcba;">ABOUT US</mark> </b></h3>
-
-        <p class="para2" id="para2">KS COURSE is a developing educational website. We have experienced traines who
+        <p class="para2" id="para2">
+            
+            KS COURSE is a developing educational website. We have experienced traines who
             prepare study stuffs
             to the students. You can find our android/ios app in playstore/appstore.
         </p>
@@ -240,7 +251,7 @@
     <!-- Div2 with about us ends here -->
     <hr>
     <!-- Div3 with contact form goes here -->
-    <div class="div3" id="contact">
+    <div class="div3" id="contact" style="display:block; padding-top:50px;">
 
         <h3><b><mark style="background-color: #ffdcba;">CONTACT US</mark></b></h3>
 
@@ -281,7 +292,7 @@
     <!-- Div3 with contact form ends here -->
     <hr>
     <!-- Courses content goes here -->
-    <h3 class="h3"><b><mark style="background-color: #ffdcba;">COURSES</mark></b></h3>
+    <h3 class="h3"style="display:block; padding-top:50px;"><b><mark style="background-color: #ffdcba;"  >COURSES</mark></b></h3>
     <br>
     <div class="div4" id="course" style="float: left;">
 
@@ -330,7 +341,7 @@
     <footer>
         <h4 style="text-align: center;background-color: #ffdcba;">@2023 copyrighted by KS GROUPS</h4>
     </footer>
-
+</div>
 </body>
 
 </html>
