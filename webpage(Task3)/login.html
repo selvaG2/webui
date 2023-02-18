@@ -7,39 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        fieldset{
+        fieldset {
             padding: 100px;
             width: 60%;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            background-color: white;
+
         }
-        .b{
+
+        .b {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        .img1{
+
+        .img1 {
             margin-bottom: 5px;
             float: right;
-            width:50%;
+            width: 50%;
         }
-        .loginc{
-            margin-top: 125px;
-        } 
-        a{
+
+       
+
+        a {
             text-decoration: none;
             color: darkslateblue;
-        }  
-            
-        
+        }
+
+        body {
+            background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+        }
+        .inputa:focus {
+            border: 5px solid lightblue;
+            box-shadow:  10 px10px 10px darkslateblue;
+            color:black;
+            width: 200px;
+        }
+        .forget :link {
+            color: red;
+            text-decoration: none;
+        }
+
+        /* visited link */
+        .forget:visited {
+            color: rgb(5, 102, 55);
+        }
+
+        /* mouse over link */
+        .forget:hover {
+            color: rgb(249, 9, 225);
+            text-decoration: underline;
+        }
+
+        /* selected link */
+        .forget:active {
+            color: blue;
+            background-color: lightgreen;
+        }
     </style>
     <script>
-        function validateForm(){
-            let y=document.forms["myform"]["password"].value;
-            if (y != "selva@12" )
+        function validateForm() {
+            let y = document.forms["myform"]["password"].value;
+            if (y != "selva@12")
                 alert("Username or password doesnot match");
-                return false;
+            return false;
 
         }
     </script>
@@ -50,24 +83,33 @@
 
         <h2 class="head1" id="head1" style="text-align: center;"><b>KS COURSES</b></h2>
 
-        <form name="loginform" action="java.html"  method="get">
+        <form name="loginform" action="java.html" method="get" style="padding: -20%;">
 
             <fieldset>
-
+                
                 <legend style="text-align: center;">
                     Login
                 </legend>
+                <div class="logo" >
+                    <img class="img1" src="/assets/hero.png" alt="error">
+                </div>
+
                 
-                <img  class="img1"  src="/assets/hero.png" alt="error">
-                <div class="loginc">
-                <label class="a"><b>USER NAME: </b></label>
-                <input class="a"  type="text" class="username" name="username" placeholder="Enter your user name" required /><br>
-                <br><label class="a"><b>PASSWORD :</b></label>
-                <input class="a" type="text" class="password" name="password" placeholder="Enter your user name" required /><br>
-                <br><br><a href="" style="margin-left: 50px;">Forget password ?</a>
+                <div class="loginc" style="margin-top: 90px;width: 50%;">
+                    <label class="a"><b>USER NAME: </b></label>
+                    <input class="inputa" type="text" class="username" name="username" placeholder="Enter your user name"
+                        required /><br>
+                    <br><label class="a"><b>PASSWORD :</b></label>
+                    <input class="inputa" type="text" class="password" name="password" placeholder="Enter your user name"
+                        required /><br>
+                    
+                        <br><br><input type="checkbox" class="check" style="margin-left: 50px;">Remember my password?
+                    <br><br><button class="b" type="login" style="margin-left: 100px;" onclick="validateForm()">Login</button>
+
+                    <br><a class="forget"  href="" style="margin-left: 60px; color: black;">Forget password ?</a>
+                </div>
+
                 
-                <br><br><button class="b" type="login" onclick="validateForm()">Login</button>
-            </div>
             </fieldset>
         </form>
 

@@ -7,8 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course lists</title>
     <style type="text/css">
+        
+        body{
+            background: rgb(255, 255, 255) url(/assets/course_bg.png) fixed;
+            background-repeat: no-repeat;
+            background-repeat: cover;
+            background-position: center;
+            
+            
+            
+        }
         h3{
             text-align: center;
+        }
+        .javaform{
+            box-shadow: #ffdcba;
         }
         .javabutton {
             background-color: rgb(3, 17, 44);
@@ -40,7 +53,7 @@
             border: 5px solid black;
             height: 300px;
             width: 370px;
-            float: left;
+            float: right;
         }
 
         .cbutton {
@@ -56,7 +69,10 @@
             border: 5px solid black;
             height: 300px;
             width: 370px;
-            float: right;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: black;
         }
 
        
@@ -64,6 +80,7 @@
 </head>
 
 <body>
+    
 
     <!-- Courses content goes here -->
     <div class="container">
@@ -99,7 +116,7 @@
         </div>
         <div class="div6" id="course" >
             <form action="cpp.html" target="_blank" class="cppform">
-                <h3 style="text-align: center;">C++</h3>
+                <h3 style="text-align: center;">C</h3>
                 <P style="width: 40%; margin-left: 80px;">Learn C<br>
                     C is a general-purpose programming language, developed in 1972.
                     C is very powerful; it has been used to develop operating systems, databases, applications, etc.
