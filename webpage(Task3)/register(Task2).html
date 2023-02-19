@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
     <style>
         fieldset {
-            font-family: monospace;
+            font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
             background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
 
         }
         body {
             background-image: #ffdcba;
+            font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
 
         }
         div{
@@ -23,30 +30,39 @@
         .login{
             margin-left: 30px;
         }
-        body {
-            background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-        }
         input:focus {
             border: 5px solid lightblue;
             box-shadow:  10 px10px 10px darkslateblue;
             color:black;
             width: 200px;
         }
+        .button {
+
+            background-color: rgb(3, 17, 44);
+            color: azure;
+            padding: 8px 18px;
+        }
+
+        .button:hover {
+            background-color: #edf7f6;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
-    <h1 style="text-align: center; font-family: monospace;">Welcome for Registration</h1>
+    <h1 style="text-align: center; font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;background-color: #ffdcba;">Welcome for Registration</h1>
     <form action="login.html" method="get" target="_blank" class="login">
-        <br>Already have account?
-        <button type="submit" class="loginbutton">login</button>
+        <br>Already have account?<br>
+        <button type="submit" class="button">login</button>
     </form>
     
     <!-- Form goes here -->
     <form action="Thankyou.html" method="get">
         <!-- field set goes here -->
         <div>
-            <fieldset>
+            <fieldset style="background-color: #ffdcba;">
 
                 <legend style="background-color: #ffffff;">
                     Student Registration
@@ -87,7 +103,7 @@
                     required/><br><br>
                 <label>Telephone number</label>
                 <input type="tel" name="Telephone" id="telnum" placeholder="enter the number in order" required/>
-                <br><br><button type="submit">Submit</button>
+                <br><br><button type="submit" class="button" style="align-items: center;">Submit</button>
 
                 
         </div>
