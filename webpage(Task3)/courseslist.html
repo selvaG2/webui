@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
     <style type="text/css">
+        body {
+            background-image: url(/assets/javabg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
         h3 {
             text-align: center;
         }
@@ -86,25 +92,37 @@
         td {
             border: 1px solid black;
             border-collapse: collapse;
-            box-shadow: 5px 5px #ffdcba;
-            
         }
 
         th,
         td {
-            padding: 10px;
+            padding: 20px;
         }
 
         th {
 
-            background-color: #ffdcba;
+            background-color: rgb(203, 102, 203);
 
         }
+        colgroup{
+            width: 450px;
+        }
+        .center tr:nth-child(even){
+         background-color: rgb(152, 60, 152);
+         }
+         /*Table ODD Rows Styles*/
+         .center tr:nth-child(odd){
+         background-color: rgb(202, 120, 202);
+         }			
+         /*Table Row HOver Style*/
+         .center tr:hover{
+         background-color: rgb(120, 0, 120);
+         }
     </style>
 </head>
 
 <body style="font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;">
+font-family: 'Poppins', sans-serif;"><b>
 
 
     <!-- Courses content goes here -->
@@ -115,14 +133,14 @@ font-family: 'Poppins', sans-serif;">
         <br>
         <div class="div4" id="course">
 
-            <form action="java.html" target="_blank" class="javaform">
+            <form action="java.html" target="_blank" class="javaform" ><b>
                 <h3 style="text-align: center;">JAVA</h3>
                 <P style="width: 40%; margin-left: 80px;font-size: small;">Learn Java<br>
                     Java is a popular programming language. Java is used to develop mobile apps, web apps, desktop apps,
                     games and much more.
 
                 </P>
-                <br><button type="submit" class="javabutton">Start learning</button>
+            </b> <br><button type="submit" class="javabutton">Start learning</button>
 
             </form>
         </div>
@@ -153,7 +171,11 @@ font-family: 'Poppins', sans-serif;">
         <div class="table">
             <table border="2px" style="margin-top: 55px;" class="center">
                 <caption style="font-size: medium;"><b>Pro price details</b></caption>
-
+                <colgroup>
+                
+                <col span="5">
+                <col style="width: 100px;">
+                </colgroup>
 
                 <tr>
                     <th>Sno. </th>
@@ -208,7 +230,7 @@ font-family: 'Poppins', sans-serif;">
                 <tr>
                 
                     
-                    <td colspan="5"><button type="submit" class="cbutton" onclick="">GO PRO</button></td>
+                    <td colspan="5"><button type="submit" class="cbutton" onclick="" style="border-radius: 4px;">GO PRO</button></td>
                     
                 </tr>
         </div>
@@ -218,6 +240,6 @@ font-family: 'Poppins', sans-serif;">
     </div>
     
 
-</body>
+</b></body>
 
 </html>
