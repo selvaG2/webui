@@ -11,28 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://kit.fontawesome.com/899f4385bc.css" crossorigin="anonymous">
     <style>
-        a:link {
+        .a1:link {
             color: #C88D4E;
             text-decoration: none;
         }
 
         /* visited link */
-        a:visited {
+        .a1:visited {
             color: #ACCBDE;
         }
 
         /* mouse over link */
-        a:hover {
+        .a1:hover {
             color: #FDF3BC;
             text-decoration: underline;
         }
 
         /* selected link */
-        a:active {
+        .a1:active {
             color: #CCC88B;
             background-color: #CC6621;
         }
+
         .hornav li {
 
             margin-left: -3%;
@@ -45,7 +47,7 @@
 
         }
 
-        a {
+        .a1 {
             text-decoration: none;
             list-style: none;
             color: #ffae00;
@@ -61,9 +63,10 @@
         .mark3 {
             background-color: #ffdcba;
         }
-        pre{
+
+        pre {
             font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -72,17 +75,21 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Poppins', sans-serif;">
     <header>
         <img src="/assets/logo.png" alt="logo" style="width: 50px; float: left; margin-left: 20px;">
-
-
+        <img src="/assets/house-user-solid.svg" alt="logo"
+            style="width: 40px; float: right; margin-left: 5px;margin-top: 10px;">
+        <a href="index.html"
+            style="width: 50px; float: right; margin-left: 20px;margin-top: 20px;text-decoration: none;color: black;"><b>HOME</b></a>
+        
+        
         <h3 style="text-align: center; background-color: #ffdcba; padding-top: 2.5%;"><b>C++ PROGRAMMING</b></h3>
     </header>
     <nav class="hornav">
         <ul>
             <li>CONTENTS</li><br>
-            <li><a href="#intro">INTRODUCTION</a></li><br>
-            <li><a href="#hw">HELLO WORLD..!</a></li><br>
-            <li><a href="#variable">VARIABLES </a></li><br>
-            <li><a href="#datatype"> DATA TYPES</a></li><br>
+            <li><a href="#intro" class="a1">INTRODUCTION</a></li><br>
+            <li><a href="#hw" class="a1">HELLO WORLD..!</a></li><br>
+            <li><a href="#variable" class="a1">VARIABLES </a></li><br>
+            <li><a href="#datatype" class="a1"> DATA TYPES</a></li><br>
 
         </ul>
 
@@ -159,7 +166,10 @@ font-family: 'Poppins', sans-serif;">
 
     <pre>data here is an integer data type variable. 
         The variable data requires 2 or 4 bytes of memory space.
-
+    </pre>
+    <footer>
+        <h4 style="text-align: center;background-color: #ffdcba;">@2023 copyrighted by KS GROUPS</h4>
+    </footer>
 </body>
 
 </html>

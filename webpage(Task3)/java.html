@@ -24,7 +24,7 @@
 
         }
 
-        a {
+        .a1 {
             text-decoration: none;
             list-style: none;
             color: #ffae00;
@@ -40,30 +40,32 @@
         .mark3 {
             background-color: #ffdcba;
         }
-        a:link {
+
+        .a1:link {
             color: #C88D4E;
             text-decoration: none;
         }
 
         /* visited link */
-        a:visited {
+        .a1:visited {
             color: #ACCBDE;
         }
 
         /* mouse over link */
-        a:hover {
+        .a1:hover {
             color: #FDF3BC;
             text-decoration: underline;
         }
 
         /* selected link */
-        a:active {
+        .a1:active {
             color: #CCC88B;
             background-color: #CC6621;
         }
-        pre{
+
+        pre {
             font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -72,18 +74,21 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Poppins', sans-serif;">
     <header>
         <img src="/assets/logo.png" alt="logo" style="width: 50px; float: left; margin-left: 20px;">
-
+        <img src="/assets/house-user-solid.svg" alt="logo"
+            style="width: 40px; float: right; margin-left: 5px;margin-top: 10px;">
+        <a href="index.html"
+            style="width: 50px; float: right; margin-left: 20px;margin-top: 20px;text-decoration: none;color: black;"><b>HOME</b></a>
 
         <h3 style="text-align: center; background-color: #ffdcba; padding-top: 2.5%;"><b>JAVA PROGRAMMING</b></h3>
     </header>
     <nav class="hornav">
         <ul>
             <li>CONTENTS</li><br>
-            <li><a href="#intro">INTRODUCTION</a></li><br>
-            <li><a href="#hw">HELLO WORLD..!</a></li><br>
-            <li><a href="#variable">VARIABLES </a></li><br>
-            <li><a href="#datatype"> DATA TYPES</a></li><br>
-            
+            <li><a href="#intro" class="a1">INTRODUCTION</a></li><br>
+            <li><a href="#hw" class="a1">HELLO WORLD..!</a></li><br>
+            <li><a href="#variable" class="a1">VARIABLES </a></li><br>
+            <li><a href="#datatype" class="a1"> DATA TYPES</a></li><br>
+
         </ul>
 
     </nav>
@@ -157,8 +162,7 @@ Here's how we create a variable in Java.</pre>
         <li>Default value: false.</li>
         <li>They are usually used for true/false conditions.</li>
     </ol>
-    <pre
-        style="background-color: rgb(0, 0, 0); display: inline-block;color: white;font-family: 'Fira Code';border-radius: 2px;
+    <pre style="background-color: rgb(0, 0, 0); display: inline-block;color: white;font-family: 'Fira Code';border-radius: 2px;
         margin-left: 3%;">
         class Main { <br>
         public static void main(String[] args) { <br>
@@ -168,7 +172,9 @@ Here's how we create a variable in Java.</pre>
         } } <br>
     </pre>
 
-
+    <footer>
+        <h4 style="text-align: center;background-color: #ffdcba;">@2023 copyrighted by KS GROUPS</h4>
+    </footer>
 
 </body>
 
