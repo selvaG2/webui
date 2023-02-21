@@ -1,6 +1,7 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <!-- check -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,44 +9,60 @@
     <title>Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="19x19" href="/assets/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        
         .fieldset1 {
             font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-            
+            font-family: 'Poppins', sans-serif;
+
             float: left;
         }
-         .fieldset2 {
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+
+        .fieldset2 {
             font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-            
-            
+            font-family: 'Poppins', sans-serif;
+
+
             float: right;
         }
-        
+
         body {
             background-image: #ffdcba;
             font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif;
 
 
         }
-        div{
+
+        div {
             /* padding: 30px; */
             margin: auto;
         }
-        .login{
+
+        .login {
             margin-left: 30px;
         }
+
         input:focus {
             border: 5px solid lightblue;
-            box-shadow:  10 px10px 10px darkslateblue;
-            color:black;
+            box-shadow: 10 px10px 10px darkslateblue;
+            color: black;
             width: 200px;
         }
+
         .button {
 
             background-color: rgb(3, 17, 44);
@@ -57,71 +74,92 @@ font-family: 'Poppins', sans-serif;
             background-color: #edf7f6;
             color: black;
         }
+
+        body {
+            background-image: url(/assets/registerbg.jpg);
+            opacity: 0.8;
+        }
     </style>
 </head>
 
 <body>
     <h1 style="text-align: center; font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;background-color: #ffdcba;">Welcome for Registration</h1>
-    <form action="login.html" method="get" target="_blank" class="login">
-        <br>Already have account?<br>
-        <button type="submit" class="button">login</button>
-    </form>
-    
+<span  class="material-symbols-outlined">
+    <a href="index.html" style="text-decoration:none;">arrow_back</a> 
+</span>
+
     <!-- Form goes here -->
-    <form action="Thankyou.html" method="get">
-        <!-- field set goes here -->
-        <div>
-            <fieldset style="background-color: #ffdcba;">
+    <form action="Thankyou.html" method="get"><b><strong>
+                <!-- field set goes here -->
+                <div>
+                    <fieldset style="background-color: #ffffff;padding: 50px;">
 
-                <legend style="background-color: #ffffff;">
-                    Student Registration
-                </legend>
-                <div class="fieldset1">
-                <label>Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required/><br><br>
-                <label>User name</label>
-                <input type="text" name="user_name" id="uname" placeholder="Enter your User name" required/><br><br>
-                <label>Password</label>
-                <input type="password" name="password" id="pass" placeholder="Enter your password" pattern="[a-z A-Z 0-9 @ # . * &]{8,12}" required><br><br>
-                <input type="checkbox" name="checkbox" id="check">Remember password?<br><br>
-                <label>Gender</label>
-                <input type="radio" name="gender" id="gen" value="Male">Male
-                <input type="radio" name="gender" id="gen" value="Female">Female<br><br>
-                </div>
-                <div class="fieldset2">
-                <label >Address</label>
-                <textarea></textarea><br><br>
-                <label>Date-of-birth</label>
-                <input type="datetime-local"><br><br>
-                <label>Select your course</label>
-                <select name="course">
-                    <optgroup label="Arts">
-                        <option value="" disabled selected hidden >--- Select your course ---</option>
-                        <option>BCA</option>
-                        <option>BSC(IT)</option>
-                        <option>BSC(CT)</option>
-                        <option>BSC(CS)</option>
-                    </optgroup>
-                    <optgroup label="Engineering">
-                        <option>EEE</option>
-                        <option>CSE</option>
-                        <option>MECH</option>
-                        <option>ECE</option>
-                    </optgroup>
-                </select>
-                <br><br><label>Mobile number</label>
-                <input type="number" name="number" id="num" placeholder="Enter your mobile number" pattern="[0-9]{10}"
-                    required/><br><br>
-                <label>Telephone number</label>
-                <input type="tel" name="Telephone" id="telnum" placeholder="enter the number in order" required/>
-                </div>
-                <br><br><button type="submit" class="button" style="align-items: center;">Submit</button>
+                        <legend style="background-color: #ffffff;">
+                            Student Registration
+                        </legend>
+                        <div class="fieldset1">
+                            <label>Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required /><br><br>
+                            <br>
+                            <label>User name</label>
+                            <input type="text" name="user_name" id="uname" placeholder="Enter your User name"
+                                required /><br><br>
+                            <br>
+                            <label>Password</label>
+                            <input type="password" name="password" id="pass" placeholder="Enter your password"
+                                pattern="[a-z A-Z 0-9 @ # . * &]{8,12}" required><br><br>
+                            <br>
+                            <input type="checkbox" name="checkbox" id="check">Remember password?<br><br>
+                            <br>
+                            <label>Gender</label>
+                            <input type="radio" name="gender" id="gen" value="Male">Male
+                            <input type="radio" name="gender" id="gen" value="Female">Female<br><br>
+                        </div>
+                        <div class="fieldset2">
+                            <label>Address</label>
+                            <textarea></textarea><br><br>
+                            <br>
+                            <label>Date-of-birth</label>
+                            <input type="datetime-local"><br><br>
+                            <br>
+                            <label>Select your course</label>
+                            <select name="course">
+                                <optgroup label="Arts">
+                                    <option value="" disabled selected hidden>--- Select your course ---</option>
+                                    <option>BCA</option>
+                                    <option>BSC(IT)</option>
+                                    <option>BSC(CT)</option>
+                                    <option>BSC(CS)</option>
+                                </optgroup>
+                                <optgroup label="Engineering">
+                                    <option>EEE</option>
+                                    <option>CSE</option>
+                                    <option>MECH</option>
+                                    <option>ECE</option>
+                                </optgroup>
+                            </select>
+                            <br>
+                            <br><br><label>Mobile number</label>
+                            <input type="number" name="number" id="num" placeholder="Enter your mobile number"
+                                pattern="[0-9]{10}" required /><br><br>
+                            <br>
+                            <label>Telephone number</label>
+                            <input type="tel" name="Telephone" id="telnum" placeholder="enter the number in order"
+                                required />
+                        </div>
+                        <br><br><button type="submit" class="button"
+                            style="display: block;margin-left: auto;margin-right: auto;margin-top: 30%;">Submit</button>
 
-                
-        </div>
-        </fieldset>
-        
+
+                </div>
+                </fieldset>
+
+            </strong></b></form>
+
+    <form action="login.html" method="get" target="_blank" class="login">
+        <p style="color: white;text-align: center;background-color: black;"><br><b>Already have account?</b></p>
+        <button style="display: block;margin-left: auto;margin-right: auto;" type="submit" class="button">login</button>
     </form>
 </body>
 
