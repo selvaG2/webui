@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
     <style type="text/css">
-        
-        h3{
+        h3 {
             text-align: center;
         }
-        .javaform{
+
+        .javaform {
             box-shadow: #ffdcba;
         }
+
         .javabutton {
             background-color: rgb(3, 17, 44);
             color: azure;
@@ -69,38 +70,63 @@
             margin-right: auto;
             box-shadow: black;
         }
-         pre{
-            font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-        }
-        
 
-       
+        pre {
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            box-shadow: 5px 5px #ffdcba;
+            
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th {
+
+            background-color: #ffdcba;
+
+        }
     </style>
 </head>
 
 <body style="font-family: 'Oswald', sans-serif;
 font-family: 'Poppins', sans-serif;">
-    
+
 
     <!-- Courses content goes here -->
     <div class="container">
         <!-- Courses content goes here -->
-        <h3 class="h3"style="display:block; padding-top:20px;"><b><mark style="background-color: #ffdcba;"  >COURSES</mark></b></h3>
+        <h3 class="h3" style="display:block; padding-top:20px;"><b><mark
+                    style="background-color: #ffdcba;">COURSES</mark></b></h3>
         <br>
         <div class="div4" id="course">
 
             <form action="java.html" target="_blank" class="javaform">
                 <h3 style="text-align: center;">JAVA</h3>
                 <P style="width: 40%; margin-left: 80px;font-size: small;">Learn Java<br>
-                    Java is a popular programming language. Java is used to develop mobile apps, web apps, desktop apps, games and much more.
+                    Java is a popular programming language. Java is used to develop mobile apps, web apps, desktop apps,
+                    games and much more.
 
                 </P>
                 <br><button type="submit" class="javabutton">Start learning</button>
 
             </form>
         </div>
-        <div class="div5" id="course" >
+        <div class="div5" id="course">
             <form action="cpp.html" target="_blank" class="cppform">
                 <h3 style="text-align: center;">C++</h3>
                 <P style="width: 60%; margin-left: 80px;font-size: small;">Learn C++<br>
@@ -112,7 +138,7 @@ font-family: 'Poppins', sans-serif;">
 
             </form>
         </div>
-        <div class="div6" id="course" >
+        <div class="div6" id="course">
             <form action="c.html" target="_blank" class="cppform">
                 <h3 style="text-align: center;">C</h3>
                 <P style="width: 40%; margin-left: 90px;font-size: small;">Learn C
@@ -124,9 +150,73 @@ font-family: 'Poppins', sans-serif;">
             </form>
         </div>
 
+        <div class="table">
+            <table border="2px" style="margin-top: 55px;" class="center">
+                <caption style="font-size: medium;"><b>Pro price details</b></caption>
+
+
+                <tr>
+                    <th>Sno. </th>
+                    <th>Language</th>
+                    <th>Course timinig </th>
+                    <th>Price</th>
+                    <th>Certificate</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">01</td>
+                    <td rowspan="2">Java</td>
+                    <td rowspan="2">6 months</td>
+                    <td>Free</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+
+                    <td>$101</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">02</td>
+                    <td rowspan="2">C++</td>
+                    <td rowspan="2">4 months</td>
+                    <td>Free</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+
+                    <td>$99</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">03</td>
+                    <td rowspan="2">C</td>
+                    <td rowspan="2">5 months</td>
+                    <td>Free</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+
+                    <td>$91</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                
+                    
+                    <td colspan="5"><button type="submit" class="cbutton" onclick="">GO PRO</button></td>
+                    
+                </tr>
         </div>
-        <!-- Courses content ends here -->
+
+       
+
     </div>
+    
 
 </body>
 
